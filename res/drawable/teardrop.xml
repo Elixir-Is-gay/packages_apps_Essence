@@ -1,0 +1,10 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="126dp"
+    android:height="126dp"
+    android:viewportWidth="126"
+    android:viewportHeight="126"
+    android:tint="@color/essence_card_color">
+  <path
+      android:pathData="M0,63C0,28.21 28.21,0 63,0C97.79,0 126,28.21 126,63C126,97.79 97.79,126 63,126H0V63Z"
+      android:fillColor="#2D3132"/>
+</vector>

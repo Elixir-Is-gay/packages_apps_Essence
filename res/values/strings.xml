@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  Copyright (C) 2014-2016 The Dirty Unicorns Project
+      Copyright (C) 2016 AospExtended ROM Project
+      Copyright (C) 2022 ProjectElixir
+
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ -->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    
+    <!-- App Title-->
+    <string name="essence_settings_title" translatable="false">Essence シ</string>
+    <string name="essence_settings_subtitle" translatable="false" >How are you today?</string>
+    
+    <!-- General app strings -->
+    <string name="extensions_title">Essence</string>
+    <string name="add">Add</string>
+    <string name="advanced">Advanced</string>
+    <string name="cancel">Cancel</string>
+    <string name="default_text">Default</string>
+    <string name="dlg_ok">OK</string>
+    <string name="enable">Enable</string>	
+    <string name="disable">Disable</string>	
+    <string name="attention">Attention</string>
+    <string name="loading">Loading\u2026</string>
+    <string name="reset">Reset</string>
+    <string name="reset_colors">Reset colors</string>
+    <string name="reset_android">Android</string>
+    <string name="text_title">Text</string>
+    <string name="icon_title">Icon</string>
+    <string name="color_title">Color</string>
+    <string name="colors_title">Colors</string>
+    <string name="search">Search</string>
+    <string name="search_apps">Search apps</string>
+	
+    <!-- Units -->
+    <string name="unit_milliseconds">milliseconds</string>
+    <string name="unit_pixels" translatable="false">dp</string>
+    <string name="unit_seconds">seconds</string>
+	
+    <!-- Extensions categories -->
+    <string name="status_bar_category">Statusbar</string>
+    <string name="system_category">Team</string>
+    <string name="themes_category">Themes</string>
+    <string name="qs_category">QS</string>
+    <string name="lockscreen_category">Lockscreen</string>
+    <string name="hardware_category">Extras</string>
+    <string name="build_tweaks_summary_title">Strive for Amelioration</string>
+    <string name="listview">ListView</string>
+
+    <!-- Project Elixir Team -->	    
+    <string name="rom_name" translatable="false">Project Elixir シ</string>
+    <string name="rom_summ" translatable="false">Redefining your android experience with our new update which offers minimal UI enhancement and close to Stock android experience with customization</string>
+    <string name="rom_summ2" translatable="false">Your experience while using our ROM will be buttery smooth without compromising the quality of the Android experience</string>
+
+    <string name="summ_about">About ROM and its Developers</string>
+    <string name="dev_support">Developers and Team</string>
+    <string name="aboutus_tab">Know more about us</string>
+	
+    <string name="donate">Donate us here</string>	
+    <string name="donate_summary">Donate to keep Project active and running</string>
+      
+    <!-- Developers -->
+    <string name="dev1">Saurav</string>
+    <string name="dev1_summary">Founder, Lead Developer</string>
+
+    <string name="dev2">Nishant</string>
+    <string name="dev2_summary">Lead Developer</string>
+
+    <string name="note">Important NOTE</string>
+    <string name="note_summary">Dont Direct Message any devs, groups are there for some reason and use some brain. If we see any direct message we will ban him or her from everywhere. We arent here to serve you 24*7 so just keep patience. Just let us live our life peacefully</string>
+
+    <!-- Contact and Download -->
+    <string name="download">Download your Builds</string>
+    <string name="download_summary">Tap here to download builds for your respective devices</string>
+
+    <string name="paypal">Paypal</string>
+	
+    <string name="don_summ1">• As a matter of fact that in order to build a Custom ROM there are certain pre-requisite such as a High-End Building Server (Jenkins) or PC having very High-End technical specification combined with a very High-Speed internet connection.</string>	    
+    <string name="don_summ2">• We developers need to allot our time and hard work from our Academics hefty schedule in the proper maintenance of the custom ROM so that we can provide users with timely and stable updates</string>
+    <string name="don_summ3">• Do consider donating or buying me a coffee on Paypal or join us on Patreon for sustainable support and rewards if you want to appreciate our work</string>
+
+    <string name="tele_group">Telegram Discussion Group</string>
+    <string name="grp_summary">If you have any issues, do share in our telegram discussion group</string>
+
+    <string name="tele_channel">Telegram Update Channel</string>
+    <string name="update_summary">Subscribe us on telegram channel for faster updates</string>
+
+    <string name="website">Our Official WebSite</string>
+    <string name="website_summary">Do visit our website, You will get all necessary info here</string>
+
+    <!-- Telegram Website Donate -->
+    <string name="download_donate">Download and Website</string>
+    <string name="telegram">Telegram Support</string>
+    <string name="donateus">Support Us by Donating</string>
+    <string name="patreon">Want Early Build access ?</string>
+    <string name="patreon_summary">Patreon is for those who wants to support devs, get early build access, some exclusive features and benefits.</string>
+
+    <!-- Summery -->
+    <string name="summ_gesture">Playback Control • System Navigation</string>
+    <string name="summ_lock">DT2S • Charging Info • Edge Lighting</string>
+    <string name="summ_misc">Game Space • Power Menu • HwKey </string>
+    <string name="summ_monet">Fonts • Theming • Lockscreen Clock</string>
+    <string name="summ_quick">QS Styles • Brightness • Data Usage</string>
+    <string name="summ_sbar">Network Traffic • Statusbar Icons </string>
+
+    <!-- Categories -->
+    <string name="gestures_title">Gestures</string>
+    <string name="lockscreen_title">Lock screen</string>
+    <string name="misc_title">Miscellaneous</string>
+    <string name="navbar_title">Navigation bar</string>
+    <string name="notifications_title">Notifications</string>
+    <string name="powermenu_title">Power menu</string>
+    <string name="quicksettings_title">Quick Settings</string>
+    <string name="recents_title">Recents apps</string>
+    <string name="statusbar_title">Status bar</string>
+    <string name="volume_title">Volume Settings</string>
+    <string name="network_traffic_catagories">Network Traffic</string>
+    <string name="clock_date">Clock and Date Settings</string>
+    <string name="status_bar_actions">Status Bar Actions</string>
+    <string name="lockscreen_settings">LockScreen Settings</string>
+    <string name="customisation_title">Themes</string>
+    <string name="buttons_category">Buttons</string>
+    <string name="lockscreen_gestures_category">LockScreen Gesture</string>
+    <string name="signal_category">Network Icon</string>
+
+    <!-- General strings -->
+    <string name="ok">OK</string>
+    <string name="save">Save</string>
+
+    <!-- Color Picker -->
+    <string name="dialog_color_picker">Color Picker</string>
+    <string name="press_color_to_apply">Press on color below to apply</string>
+    <string name="arrow_right">→</string>
+    <string name="arrow_down">↓</string>
+    <string name="hex">Hex:</string>
+    <string name="hex_hint" translatable="false">#FFDDDDDD</string>
+    <string name="hex_check_button_text">PREVIEW</string>
+    <string name="hex_reset_button_text">RESET</string>
+    <string name="set">Set</string>
+    <string name="color_default">Default</string>
+    <string name="color_right_arrow" translatable="false">"→"</string>
+    <string name="color_down_arrow" translatable="false">"↓"</string>
+    <string name="longpress_info">Longpress box to save color</string>
+
+
+    <string name="essence_donate_status_normal_title">You are not PRO User </string>
+    <string name="essence_donate_status_normal_subtitle">Subscribe to become a PRO user</string>
+    <string name="essence_donate_status_donate_title">You are now a PRO user</string>   
+    <string name="essence_donate_status_donate_subtitle">Thanks for supporting us!</string>   
+	    
+    <!-- Gaming mode -->
+    <string name="game_custs">Gaming Mode Options</string>
+    <string name="gaming_mode_title">Game space</string>
+    <string name="gaming_mode_summary">Extra features for immersive gaming experience</string>
+
+    <!-- Lockscreen clock customisation -->
+    <string name="ls_clock_elixir_customisation_title">Lockscreen Clocks</string>
+    <string name="ls_depth_clock_elixir_customisation_title">Automated Depth Clock</string>
+    <string name="ls_depth_clock_margin_elixir_customisation_title">Automated Clock Margin</string>
+    <string name="ls_depth_clock_image_margin_elixir_customisation_title">Automated Clock Overlay Margin</string>
+    <string name="ls_depth_clock_margin_elixir_customisation_subtitle">Set top margin of clock used in autogenerated depth clocks.</string>
+    <string name="ls_depth_clock_style_elixir_customisation_title">Automated Clock Styling</string>
+    <string name="ls_depth_clock_style_elixir_customisation_subtitle">Choose which clock to be used in autogenerated depth clocks.</string>
+
+    <!-- Ignore window secure -->
+    <string name="ignore_window_secure_title">Ignore window secure flags</string>
+    <string name="ignore_window_secure_summary">This removes the screenshots and screenrecords limits for all applications. Normally, special applications are replaced with black areas in records. This can be convenient in some cases but may lead to privacy leaks. After changing this toggle, you may need to restart applications for the change to take effect.</string>
+
+    <!-- Fingerprint Ripple Effect -->
+    <string name="enable_fingerprint_ripple_effect_title">Ripple effect</string>
+    <string name="enable_fingerprint_ripple_effect_summary">Show ripple effect on unlock with fingerprint</string>
+
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the settings category for theme overlays. -->
+    <string name="theme_customization_category">Theming</string>
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize headline and body fonts. -->
+    <string name="theme_customization_font_title">Headline / Body font</string>
+    <string name="theme_customization_font_summary">Set system font style</string>
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize the adaptive icon shape (e.g. launcher and quick settings icons). -->
+    <string name="theme_customization_icon_shape_title">Icon shape</string>
+    <string name="theme_customization_icon_shape_summary">Set system icon shape style</string>
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize the system wide icon pack. -->
+    <string name="theme_customization_icon_pack_title">Icon pack</string>
+    <string name="theme_customization_icon_pack_summary">Set custom icon pack style</string>
+    <string name="theme_customization_signal_icon_title">Signal icon style</string>
+    <string name="theme_customization_signal_icon_summary">Set custom signal icon style</string>
+    <string name="theme_customization_wifi_icon_title">WiFi icon style</string>
+    <string name="theme_customization_wifi_icon_summary">Set custom wifi icon style</string>
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Label for the option that turns off customizations for a given category.-->
+    <string name="theme_customization_device_default">Device default</string>
+
+    <!-- Custom Data icons -->
+    <string name="theme_customization_data_title">Data icon style</string>
+    <string name="theme_customization_data_summary">Set custom data icon style</string>
+
+    <!-- Auto Depth Clock Font Customisation -->
+    <string name="customization_depth_clock_font_title">Automated Clock Font</string>
+    <string name="customization_depth_clock_font_summary">Set font style of automated lockscreen depth clock</string>
+
+    <!-- Lockscreen battery info indicator  -->
+    <string name="lockscreen_battery_info_title">Lockscreen charging info</string>
+    <string name="lockscreen_battery_info_summary">Show charging current, voltage, wattage and battery temperature on lockscreen while charging</string>
+
+    <!-- Miscellaneous -->
+    <string name="miscellaneous_developer_options_category">Developer options</string>
+    <string name="miscellaneous_app_downgrade_title">Allow application downgrade</string>
+    <string name="miscellaneous_app_downgrade_summary">Allow downgrading system applications, which may result in crashes and data loss</string>
+
+    <!-- Notifications -->
+    <string name="notifications_alert_display_on_title">Alert while display on</string>
+    <string name="notifications_alert_display_on_summary">Play sound and vibration for notifications while the display is on</string>
+
+    <!-- 4G icon -->
+    <string name="show_fourg_icon_title">4G icon</string>
+    <string name="show_fourg_icon_summary">Display 4G icon in signal icon instead LTE</string>
+
+    <!-- Data disabled icon -->
+    <string name="data_disabled_icon_title">Show data disabled icon</string>
+    <string name="data_disabled_icon_summary">Display the cross sign next to signal bar when data is disabled</string>
+
+    <!-- Wi-Fi Standard icon -->
+    <string name="show_wifi_standard_icon_title">Show Wi-Fi type icon</string>
+    <string name="show_wifi_standard_icon_summary">Show Wi-Fi type in Wi-Fi signal indicator</string>
+
+    <!-- Heads up options -->
+    <string name="notifications_category_title">Annoying notifications protection</string>
+    <string name="less_boring_heads_up_title">Make heads up less annoying</string>
+    <string name="less_boring_heads_up_summary">Show heads up only for dialer or messaging app if they are not in foreground</string>
+
+    <!-- Status bar Icon Manager -->
+    <string name="icon_manager_title">Icon manager</string>
+    <string name="icon_manager_summary">Control visibility of status bar icons</string>
+    <string name="sbicon_category">Statusbar Icon Manager</string>
+      
+    <!-- Brightness slider styles -->
+    <string name="theme_customization_brightness_slider_title">Brightness slider style</string>
+    <string name="theme_customization_brightness_slider_summary">Set custom brightness slider style</string>
+
+    <!-- Brightness control -->
+    <string name="status_bar_toggle_brightness">Brightness control</string>
+    <string name="status_bar_toggle_brightness_summary">Adjust brightness by sliding across the status bar</string>
+
+    <!-- Brightness slider haptic feedback -->
+    <string name="qs_brightness_slider_haptic_title">Haptic feedback</string>
+    <string name="qs_brightness_slider_haptic_summary">Provide haptic feedback on changing brightness using slider</string>
+
+    <!-- Screen off animation -->
+    <string name="default_string">Default</string>
+    <string name="screen_off_animation_title">Screen off animation</string>
+    <string name="screen_off_animation_crt">CRT</string>
+    <string name="screen_off_animation_scale">Scale</string>
+    <string name="lockscreen_effects_cat">Lockscreen Animations</string>
+
+    <!-- Status bar - Battery -->    
+    <string name="statusbar_battery">Battery Customizations</string>
+    <string name="status_bar_battery_category_title">StatusBar Battery customizations</string>
+    <string name="status_bar_battery_style_summary">Statusbar and QS Battery Styles</string>
+
+    <string name="status_bar_battery_style_title">Battery style</string>
+    <string name="status_bar_battery_style_icon_portrait">Icon portrait</string>
+    <string name="status_bar_battery_style_icon_rlandscape">Icon landscape (Right)</string>
+    <string name="status_bar_battery_style_icon_landscape">Icon landscape (Left)</string>
+    <string name="status_bar_battery_style_icon_landscape_buddy">Landscape Capsule</string>
+    <string name="status_bar_battery_style_icon_landscape_line">Landscape Lorn</string>
+    <string name="status_bar_battery_style_icon_landscape_musku">Portrait IOS</string>
+    <string name="status_bar_battery_style_icon_landscape_pill">Portrait Mx</string>
+    <string name="status_bar_battery_style_icon_landscape_signal">Landscape Airoo</string>
+    <string name="status_bar_battery_style_icon_rlandscape_style_a">Landscape R Style A</string>
+    <string name="status_bar_battery_style_icon_landscape_style_a">Landscape L Style A</string>
+    <string name="status_bar_battery_style_icon_rlandscape_style_b">Landscape R Style B</string>
+    <string name="status_bar_battery_style_icon_landscape_style_b">Landscape L Style B</string>
+    <string name="status_bar_battery_style_icon_landscape_ios15">Landscape iOS 15</string>
+    <string name="status_bar_battery_style_icon_landscape_ios16">Landscape iOS 16</string>
+    <string name="status_bar_battery_style_icon_landscape_origami">Landscape Origami</string>
+    <string name="status_bar_battery_style_circle">Circle</string>
+    <string name="status_bar_battery_style_dotted_circle">Dotted circle</string>
+    <string name="status_bar_battery_style_filled_circle">Filled circle</string>
+    <string name="status_bar_battery_style_big_circle">Big circle</string>
+    <string name="status_bar_battery_style_big_dotted_circle">Big dotted circle</string>
+    <string name="status_bar_battery_style_text">Text</string>
+    <string name="status_bar_battery_style_hidden">Hidden</string>
+    <string name="status_bar_battery_style_follow_status_bar">Follow status bar style</string>
+    <string name="status_bar_battery_percent_title">Battery percent</string>
+    <string name="status_bar_battery_percent_hidden">Hidden</string>
+    <string name="status_bar_battery_percent_text_inside">Inside the icon</string>
+    <string name="status_bar_battery_percent_text_next_right">Next to the icon (right)</string> 
+    <string name="status_bar_battery_percent_text_next_left">Next to the icon (left)</string> 
+    <string name="status_bar_battery_text_charging_title">Battery percentage when charging</string>
+    <string name="status_bar_battery_text_charging_summary">Always display battery percentage when charging</string>
+
+    <!-- QS battery -->
+    <string name="qs_battery_category_title">Qs Battery customizations</string>
+    <string name="qs_use_status_bar_battery_style">Follow status bar style</string>
+
+    <!-- Edge light -->
+    <string name="edge_light_title">Edge light</string>
+    <string name="edge_light_summary">Light up the side edges of the screen on notification pulse</string>
+    <string name="edge_light_always_trigger_on_pulse_title">Always trigger on pulse</string>
+    <string name="edge_light_always_trigger_on_pulse_summary">Whether to show edge light whenever ambient display is shown and not just for notifications</string>
+    <string name="edge_light_repeat_animation_title">Repeat animation</string>
+    <string name="edge_light_repeat_animation_summary_on">Repeat until timeout</string>
+    <string name="edge_light_repeat_animation_summary_off">Show only once</string>
+    <string name="edge_light_color_mode_title">Edge light color mode</string>
+    <string name="accent_color">Accent color (Default)</string>
+    <string name="notification_color">Notification color</string>
+    <string name="wallpaper_color">Wallpaper color</string>
+    <string name="custom_color">Custom color</string>
+    <string name="notifications_edge_light_style_title">Edge light style</string>
+    <string name="notifications_edge_light_stroke_width_title">Edge light stroke width</string>
+    <string name="notifications_edge_light_stroke_width_summary">Configure edge light thickness</string>
+    <string name="notifications_edge_light_style_1">Draw Line</string>
+    <string name="notifications_edge_light_style_2">Blink/Pulse</string>
+    <string name="rainbow_gradient_color">Rainbow gradient color</string>
+	
+    <!-- Disable QS -->
+    <string name="disable_qs_title">Hide QS in secure lockscreen</string>
+    <string name="disable_qs_summary">Hides QS if device is locked. Does not disable notification shade</string>
+
+    <!-- Power menu on secure lockscreen -->
+    <string name="lockscreen_enable_power_menu_title">Allow power menu on lockscreen</string>
+    <string name="lockscreen_enable_power_menu_summary">Allow accessing power menu on secure lockscreen</string>
+
+    <string name="quick_settings_require_unlock_title">Secure QS tiles require unlock</string>
+    <string name="quick_settings_require_unlock_summary">The following quick settings require the device to be unlocked before you can interact with them:\nAirplane, Battery saver, Bluetooth, Cellular, Data saver, Hotspot, Internet, NFC, Rotation lock, and Wi-Fi</string>
+
+    <string name="status_bar_network_traffic_settings_title">Network traffic monitor</string>
+    <string name="status_bar_network_traffic_settings_summary">Display and customize current network traffic levels</string>
+	
+    <!-- Status bar/Network traffic -->
+    <string name="network_traffic_location_title">Location</string>
+    <string name="network_traffic_location_disable">Disabled</string>
+    <string name="network_traffic_location_statusbar">Statusbar</string>
+    <string name="network_traffic_location_quick_statusbar">Quick Statusbar</string>
+    <string name="network_traffic_mode_title">Display mode</string>
+    <string name="network_traffic_mode_up">Upload only</string>
+    <string name="network_traffic_mode_down">Download only</string>
+    <string name="network_traffic_mode_all">Upload and download</string>
+    <string name="network_traffic_autohide">Auto hide</string>
+    <string name="network_traffic_autohide_summary">Hide the traffic monitor when inactive</string>
+    <string name="network_traffic_autohide_kilobits" translatable="false">Kb/s</string>
+    <string name="network_traffic_autohide_kilobytes" translatable="false">KB/s</string>
+    <string name="network_traffic_autohide_threshold">Inactivity threshold</string>
+    <string name="network_traffic_refresh_interval_title">Refresh interval</string>
+    <string name="network_traffic_refresh_interval_summary">Duration after which speed is remeasured</string>
+    <string name="network_traffic_units_title">Traffic measurement units</string>
+    <string name="network_traffic_units_bits">Bits per second (b/s)</string>
+    <string name="network_traffic_units_kilobits">Kilobits per second (kb/s)</string>
+    <string name="network_traffic_units_megabits">Megabits per second (Mb/s)</string>
+    <string name="network_traffic_units_bytes">Bytes per second (B/s)</string>
+    <string name="network_traffic_units_kilobytes">Kilobytes per second (kB/s)</string>
+    <string name="network_traffic_units_megabytes">Megabytes per second (MB/s)</string>
+    <string name="network_traffic_hidearrow">Hide arrows</string>
+    <string name="network_traffic_hidearrow_summary">Hide the network traffic indicator arrows</string>
+	
+    <!-- UDFPS settings -->
+    <string name="udfps_recog_animation_effect_title">UDFPS custom animation</string>
+    <string name="udfps_recog_animation_effect_summary">Choose animation effect</string>
+    <string name="udfps_recog_animation_randomize_title">Random UDFPS animation</string>
+    <string name="udfps_recog_animation_randomize_summary">Changes UDFPS animation randomly on every unlock</string>
+
+    <!-- Fingerprint authentication vibration -->
+    <string name="fingerprint_category">Fingerprint</string>
+    <string name="fprint_error_vib_title">Fingerprint error vibration</string>
+    <string name="fprint_error_vib_summary">Vibrate on error fingerprint authentication</string>
+    <string name="fprint_success_vib_title">Fingerprint authentication vibration</string>
+    <string name="fprint_success_vib_summary">Vibrate on successful fingerprint authentication</string>
+
+    <!-- Themes/Monet Engine -->
+    <string name="monet_engine_custom_color_title">Accent color</string>
+    <string name="monet_engine_custom_color_summary">Choose custom color for accent</string>
+    <string name="monet_engine_custom_bgcolor_title">Background color</string>
+    <string name="monet_engine_custom_bgcolor_summary">Choose custom color for background</string>
+    <string name="monet_engine_color_override_title">Custom color</string>
+    <string name="monet_engine_luminance_factor_title">Luminance</string>
+    <string name="monet_engine_luminance_factor_summary">Higher values produce brighter colors</string>
+    <string name="monet_engine_chroma_factor_title">Chroma factor</string>
+    <string name="monet_engine_chroma_factor_summary">Higher values produce stronger colors</string>
+    <string name="monet_engine_tint_background_title">Tint background</string>
+    <string name="monet_engine_tint_background_summary">Make luminance and chroma selection affect background colors as well</string>
+    <string name="monet_engine_style_title">Theme style</string>
+    <string name="monet_engine_style_tonal_spot">Tonal Spot (Default)</string>
+    <string name="monet_engine_style_vibrant">Vibrant</string>
+    <string name="monet_engine_style_expressive">Expressive</string>
+    <string name="monet_engine_style_spritz">Spritz</string>
+    <string name="monet_engine_style_rainbow">Rainbow</string>
+    <string name="monet_engine_style_fruit_salad">Fruit Salad</string>
+    <string name="monet_engine_color_source_title">Color source</string>
+    <string name="monet_engine_color_source_both">Both (Default)</string>
+    <string name="monet_engine_color_source_home">Home wallpaper</string>
+    <string name="monet_engine_color_source_lock">Lock wallpaper</string>
+    <string name="monet_engine_color_source_preset">Preset</string>
+    <string name="monet_engine_whole_palette_title">Whole palette</string>
+    <string name="monet_engine_whole_palette_summary">Make Luminance and Chroma selection affect secondary colors as well</string>
+    <string name="monet_engine_style_monochromatic">Monochromatic</string>
+
+    <string name="themes_monet_category">Monet</string>
+    <string name="themes_monet_title">Monet settings</string>
+    <string name="themes_monet_summary">Customize Android\'s built-in theme engine</string>
+	    
+    <!-- Footer -->
+    <string name="qs_footer_category">QS Footer</string>
+    <string name="qs_footer_datausage_title">Data usage</string>
+    <string name="qs_footer_datausage_summary">Display data usage summary in quick settings footer</string>
+
+    <!-- Statusbar colored icons -->
+    <string name="statusbar_colored_icons_title">Colored icons</string>
+    <string name="statusbar_colored_icons_summary">Use proper app icons for notification icons in status bar</string>
+
+    <!-- Notification count -->
+    <string name="status_bar_notif_count_title">Show notification count</string>
+    <string name="status_bar_notif_count_summary">Display the number of pending notifications</string>
+
+    <!-- Navigation Bar -->
+    <string name="navbar_layout_category_title">Button navbar</string>
+    <string name="navbar_layout_title">Layout</string>
+    <string name="navbar_layout_normal">Normal</string>
+    <string name="navbar_layout_compact">Compact</string>
+    <string name="navbar_layout_leftleaning">Left-leaning</string>
+    <string name="navbar_layout_rightleaning">Right-leaning</string>
+    <string name="navbar_invert_layout_title">Invert layout</string>
+    <string name="navbar_invert_layout_summary">Inverts the layout of the navigation bar and other items, such as the IME switcher</string>
+
+    <string name="status_bar_clock_chip_title">Background chip</string>
+    <string name="status_bar_clock_chip_summary">Display accented chip behind clock</string>
+
+    <!-- Power menu -->
+    <string name="power_menu_interface_category">Power Menu</string>
+    <string name="power_menu_actions_title">Power Menu Actions</string>
+    <string name="power_menu_actions_summary">Choose which actions are displayed</string>
+
+    <!-- Power menu/Power menu actions -->
+    <string name="power_menu_actions_advanced_reboot_title">Advanced reboot</string>
+    <string name="power_menu_actions_screenshot_title">Screenshot</string>
+    <string name="power_menu_actions_airplane_title">Airplane</string>
+    <string name="power_menu_actions_torch_title">Flashlight</string>
+    <string name="power_menu_actions_settings_title">Settings</string>
+    <string name="power_menu_actions_lockdown_title">Lockdown</string>
+    <string name="power_menu_actions_lockdown_unavailable">Lockdown is disabled as keyguard isn\'t secure</string>
+    <string name="power_menu_actions_soundpanel_title">Sound panel</string>
+    <string name="power_menu_actions_users_title">Users</string>
+    <string name="power_menu_actions_logout_title">Logout</string>
+    <string name="power_menu_actions_emergency_title">Emergency</string>
+    <string name="power_menu_actions_devicecontrols_title">Device controls</string>
+
+    <string name="status_bar_lyric_title">Status bar lyric</string>
+    <string name="status_bar_lyric_summary">Show lyric in status bar (need app support)</string>
+	
+    <!-- Unlock FPS for specific games -->
+    <string name="use_games_spoof_title">Unlock higher FPS in games</string>
+    <string name="use_games_spoof_summary">Spoof your device as a different model for specific games to unlock higher FPS</string>
+
+    <!-- Three fingers swipe action -->
+    <string name="three_fingers_swipe_title">Three fingers swipe</string>
+    <string name="hardware_keys_action_nothing">No action</string>
+    <string name="hardware_keys_action_menu">Open/close menu</string>
+    <string name="hardware_keys_action_app_switch">Recent apps switcher</string>
+    <string name="hardware_keys_action_search">Search assistant</string>
+    <string name="hardware_keys_action_voice_search">Voice search</string>
+    <string name="hardware_keys_action_in_app_search">In-app search</string>
+    <string name="hardware_keys_action_launch_camera">Launch camera</string>
+    <string name="hardware_keys_action_sleep">Turn screen off</string>
+    <string name="hardware_keys_action_last_app">Last app</string>
+    <string name="hardware_keys_action_split_screen">Split screen</string>
+    <string name="hardware_keys_action_close_app">Kill app</string>
+    <string name="hardware_keys_action_torch">Toggle torch</string>
+    <string name="hardware_keys_action_screenshot">Take screenshot</string>
+    <string name="hardware_keys_action_volume_panel">Toggle volume panel</string>
+    <string name="hardware_keys_action_clear_all_notifications">Clear all notifications</string>
+    <string name="hardware_keys_action_notifications_panel">Toggle notifications panel</string>
+    <string name="hardware_keys_action_expand_qs_panel">Expand QS panel</string>
+    <string name="hardware_keys_action_ringer_modes">Change ringer mode</string>
+
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: 2022 Project Kaleidoscope
+     SPDX-License-Identifier: Apache-2.0
+-->
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    android:title=" ">
+
+      <!-- Header -->
+    <PreferenceCategory
+        android:title="@string/status_bar_lyric_title"
+	      android:summary="let the statusbar sing"       
+        android:layout="@layout/custom_preference_category_essence">
+    </PreferenceCategory>
+  
+    <lineageos.preference.SecureSettingMainSwitchPreference
+        android:key="status_bar_show_lyric"
+        android:title="@string/enable"
+        android:defaultValue="false"/>
+  
+</PreferenceScreen>

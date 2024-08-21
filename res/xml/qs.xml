@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  Copyright (C) 2017 The Dirty Unicorns Project
+
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ -->
+
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    android:title=" ">
+
+    <!-- Header -->
+    <PreferenceCategory
+        android:title="Quick Settings"
+	android:summary="Just swipe down to see the magic"      
+        android:layout="@layout/custom_preference_category_essence">
+    </PreferenceCategory>
+
+   <PreferenceCategory
+            android:layout="@layout/custom_preference_category"
+            android:title="Secure Qs">
+	
+        <org.elixir.essence.preferences.SystemSettingSwitchPreference
+            android:key="secure_lockscreen_qs_disabled"
+      	    settings:layout="@layout/xd_pref_card_top"    
+	    android:title="@string/disable_qs_title"
+            android:summary="@string/disable_qs_summary"
+            android:defaultValue="false" />
+
+	<!-- Secure QS tiles require unlock -->
+	<org.elixir.essence.preferences.SecureSettingSwitchPreference    
+            android:key="qstile_requires_unlocking"
+	    settings:layout="@layout/xd_pref_card_bot"
+	    android:title="@string/quick_settings_require_unlock_title"
+            android:summary="@string/quick_settings_require_unlock_summary"
+            android:defaultValue="true"/>
+    </PreferenceCategory>
+	
+   <PreferenceCategory
+            android:key="datausage_category"
+            android:layout="@layout/custom_preference_category"
+            android:title="Qs Options">
+
+       <org.elixir.essence.preferences.SystemSettingSwitchPreference
+            android:key="qs_brightness_slider_haptic"
+            android:title="@string/qs_brightness_slider_haptic_title"
+	    settings:layout="@layout/xd_pref_card_top"
+	    android:summary="@string/qs_brightness_slider_haptic_summary"
+            android:defaultValue="false" />
+
+        <org.elixir.essence.preferences.SecureSettingSwitchPreference
+            android:key="qs_show_data_usage"
+            settings:layout="@layout/xd_pref_card_bot"
+            android:summary="@string/qs_footer_datausage_summary"
+            android:title="@string/qs_footer_datausage_title" />
+
+    </PreferenceCategory>
+	
+</PreferenceScreen>

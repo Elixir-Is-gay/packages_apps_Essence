@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Copyright (C) 2017-2019 The PixelDust Project
+     Copyright (C) 2022 PixelPlusUI
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:title=" ">
+
+    <!-- Essence Header -->
+    <PreferenceCategory
+        android:title="@string/essence_settings_title"
+	    android:summary="Express your enhanced style"    
+        android:layout="@layout/custom_preference_category_home_title_new">
+    </PreferenceCategory>
+
+    <com.android.settingslib.widget.LayoutPreference
+        android:key="essence_homepage_header"
+        android:selectable="false"
+        android:layout="@layout/essence_homepage_header" />
+
+    <Preference
+        android:key="essence_donate_status"
+	    android:title="@string/essence_donate_status_normal_title"
+	    android:fragment="org.elixir.essence.categories.Donate"
+        android:summary="@string/essence_donate_status_normal_subtitle"
+        android:icon="@drawable/essence_non_pro_user"
+        settings:layout="@layout/pro_user_card">
+    </Preference>
+
+    <!-- Teams  -->
+    <Preference
+        settings:layout="@layout/essence_mainpage-oldstyle-bot"
+        android:fragment="org.elixir.essence.categories.About"
+        android:key="about_category"
+        android:icon="@drawable/ic_system_category"
+        android:textStyle="bold"
+        android:summary="@string/summ_about"
+        android:title="@string/aboutus_tab" />
+   
+    <!-- Lock Screen  -->
+    <Preference
+        settings:layout="@layout/essence_mainpage-oldstyle-top"
+        android:fragment="org.elixir.essence.categories.Lockscreen"
+        android:key="lockscreen_category"
+        android:icon="@drawable/ic_lockscreen_category"
+        android:textStyle="bold"
+        android:summary="@string/summ_lock"
+        android:title="@string/lockscreen_title" />
+
+    <!-- Status Bar  -->
+    <Preference
+        settings:layout="@layout/essence_mainpage-oldstyle-bot"
+        android:fragment="org.elixir.essence.categories.StatusBar"
+        android:key="statusbar_category"
+        android:icon="@drawable/ic_status_bar_category"
+        android:textStyle="bold"
+        android:summary="@string/summ_sbar"
+        android:title="@string/statusbar_title" />
+
+    <!-- Quick Settings -->
+    <Preference
+        settings:layout="@layout/essence_mainpage-oldstyle-top"
+        android:fragment="org.elixir.essence.categories.Qs"
+        android:key="quicksettings_category"
+        android:icon="@drawable/ic_qs_category"
+        android:textStyle="bold"
+        android:summary="@string/summ_quick"
+        android:title="@string/quicksettings_title" />
+
+    <!-- Gaming Mode   -->
+    <Preference
+        settings:layout="@layout/essence_mainpage-oldstyle-bot"
+        android:key="gaming_mode"
+        android:icon="@drawable/ic_game_mode"
+        android:textStyle="bold"
+        android:title="@string/gaming_mode_title"
+        android:summary="@string/gaming_mode_summary">
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetPackage="io.chaldeaprjkt.gamespace"
+                android:targetClass="io.chaldeaprjkt.gamespace.settings.SettingsActivity" />
+	 </Preference>  
+	
+</PreferenceScreen>

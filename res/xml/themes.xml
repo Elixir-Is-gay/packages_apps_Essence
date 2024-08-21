@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  Copyright (C) 2017 The Dirty Unicorns Project
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+  You should have received a copy of the GNU General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ -->
+
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    xmlns:app="http://schemas.android.com/apk/res-auto"	
+    android:title=" ">
+
+    <!-- Header -->
+    <PreferenceCategory
+        android:title="Theming"
+	    android:summary="Redefining your android experience"
+        android:layout="@layout/custom_preference_category_essence">
+    </PreferenceCategory>
+
+      <PreferenceCategory
+        android:key="exclusive_clock"
+        android:layout="@layout/custom_preference_category"
+        android:title="Exclusive Clocks">
+
+        <Preference
+	        android:key="android.customization.lsclock.depthclock.fragment"
+   	        settings:layout="@layout/essence_pref_card_mid2"
+            android:title="Custom lockscreen clocks"
+            android:summary="Choose custom clock, or depth style clock"
+            android:fragment="org.elixir.essence.fragments.LSClockDepthFragment" />
+
+    </PreferenceCategory>
+
+   <PreferenceCategory
+        android:layout="@layout/custom_preference_category"
+        android:title="Redefine your UI">
+
+        <!-- Monet engine -->
+        <Preference
+            android:key="monet_engine"
+	    android:title="@string/themes_monet_title"
+	    settings:layout="@layout/essence_pref_card_top"
+            android:summary="@string/themes_monet_summary"
+            android:fragment="org.elixir.essence.fragments.MonetSettings" />
+
+        <Preference
+            android:key="android.theme.customization.fonts"
+            settings:layout="@layout/essence_pref_card_bot"
+            android:title="@string/theme_customization_font_title"
+            android:summary="@string/theme_customization_font_summary"
+            android:fragment="org.elixir.essence.fragments.FontsPicker"/>
+
+        <Preference
+            android:key="android.theme.customization.icon_pack"
+            settings:layout="@layout/essence_pref_card_top"
+            android:title="@string/theme_customization_icon_pack_title"
+            android:summary="@string/theme_customization_icon_pack_summary"
+            android:fragment="org.elixir.essence.fragments.StatusbarIcons"/>
+
+        <Preference
+            android:key="android.theme.customization.adaptive_icon_shape"
+            settings:layout="@layout/essence_pref_card_bot"
+            android:title="@string/theme_customization_icon_shape_title"
+            android:summary="@string/theme_customization_icon_shape_summary"
+            android:fragment="org.elixir.essence.fragments.IconShapes"/>
+
+        <Preference
+            android:key="android.theme.customization.signal_icon"
+            settings:layout="@layout/essence_pref_card_top"
+            android:title="@string/theme_customization_signal_icon_title"
+            android:summary="@string/theme_customization_signal_icon_summary"
+            android:fragment="org.elixir.essence.fragments.SignalIcons"/>
+
+        <Preference
+            android:key="android.theme.customization.wifi_icon"
+            settings:layout="@layout/essence_pref_card_bot"
+            android:title="@string/theme_customization_wifi_icon_title"
+            android:summary="@string/theme_customization_wifi_icon_summary"
+            android:fragment="org.elixir.essence.fragments.WifiIcons"/>
+
+        <Preference
+            android:key="android.theme.customization.brightness_slider"
+            settings:layout="@layout/essence_pref_card_top"
+            android:title="@string/theme_customization_brightness_slider_title"
+            android:summary="@string/theme_customization_brightness_slider_summary"
+            android:fragment="org.elixir.essence.fragments.BrightnessSlider"/>
+
+        <!-- Data icon style -->  
+        <Preference
+	    android:key="android.customization.sb_data"
+   	    settings:layout="@layout/essence_pref_card_bot"
+            android:title="@string/theme_customization_data_title"
+            android:summary="@string/theme_customization_data_summary"
+            android:fragment="org.elixir.essence.fragments.DataStyles" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

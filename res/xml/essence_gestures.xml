@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  Copyright (C) 2017 The Dirty Unicorns Project
+
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ -->
+
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    android:title=" ">
+
+    <!-- Header -->
+    <PreferenceCategory
+        android:title="Gestures"
+        android:summary="Be more effective than words"   
+        android:layout="@layout/custom_preference_category_essence">
+    </PreferenceCategory>
+
+    <Preference
+        android:key="gesture_system_navigation_input"
+        android:title="@string/system_navigation_title"
+        settings:layout="@layout/essence_pref_card_top"
+        android:fragment="com.android.settings.gestures.SystemNavigationGestureSettings" />
+  
+    <Preference
+        android:key="doze_double_tap_summary"
+        android:title="@string/double_tap_title"
+        settings:layout="@layout/essence_pref_card_bot"
+        settings:userRestriction="no_ambient_display"
+        android:fragment="com.android.settings.gestures.DoubleTapAmbientSettings"/>
+
+    <Preference
+        android:key="gesture_one_hand"
+        android:title="@string/one_handed_title"
+        settings:layout="@layout/essence_pref_card_top"
+        android:fragment="com.android.settings.gestures.OneHandedSettings" />
+
+    <Preference
+        android:key="gesture_adaptive_playback_summary"
+        settings:layout="@layout/essence_pref_card_bot"
+        android:title="@string/adaptive_playback_screen_title"
+        android:fragment="com.android.settings.sound.AdaptivePlaybackSoundSettings" />
+
+    <Preference
+        android:key="gesture_double_tap_power_input"
+        android:title="@string/double_tap_power_for_camera_title"
+        settings:layout="@layout/essence_pref_card_top"
+        android:fragment="com.android.settings.gestures.DoubleTapPowerSettings" />
+
+    <Preference
+        android:key="gesture_power_menu"
+        android:title="@string/power_menu_setting_name"
+        settings:layout="@layout/essence_pref_card_bot"
+        android:fragment="com.android.settings.gestures.PowerMenuSettings" />
+
+    <Preference
+        android:key="always_on_display_schedule"
+        android:title="@string/always_on_display_schedule_title"
+	    settings:layout="@layout/essence_pref_card_top"    
+	    android:summary="Enable schedule always on display"   
+        android:fragment="com.android.settings.display.AODSchedule"
+	    settings:controller="com.android.settings.display.AODSchedulePreferenceController" />
+
+    <org.elixir.essence.preferences.SecureSettingSwitchPreference
+        android:key="doze_double_tap_gesture_ambient"
+	    settings:layout="@layout/xd_pref_card_bot"    
+        android:title="@string/doze_gesture_ambient_title"
+        android:summary="@string/doze_gesture_ambient_summary"
+        android:defaultValue="false" />
+  
+    <Preference
+        android:key="gesture_pick_up_input"
+        android:title="@string/ambient_display_pickup_title"
+        settings:layout="@layout/xd_pref_card_mid2"
+        android:fragment="com.android.settings.gestures.PickupGestureSettings" />
+
+    <!-- Three fingers swipe action -->
+    <ListPreference
+        android:key="three_fingers_swipe"
+        android:dialogTitle="@string/three_fingers_swipe_title"
+        settings:layout="@layout/xd_pref_card_mid2"
+        android:title="@string/three_fingers_swipe_title"
+        android:entries="@array/hardware_keys_action_entries"
+        android:entryValues="@array/hardware_keys_action_values"
+        android:persistent="false" />
+
+</PreferenceScreen>

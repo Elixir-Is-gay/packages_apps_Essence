@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    android:title=" ">
+
+    <!-- Header -->
+    <PreferenceCategory
+        android:title="Miscellaneous"
+	android:summary="Its the software that brings capability"       
+        android:layout="@layout/custom_preference_category_essence">
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:layout="@layout/custom_preference_category"
+        android:title="Hardware Key Options" >
+
+        <!-- Power menu actions -->
+        <Preference
+            android:key="power_menu_actions"
+            android:title="@string/power_menu_actions_title"
+            android:summary="@string/power_menu_actions_summary"
+            settings:layout="@layout/essence_pref_card_top"    
+            android:fragment="org.elixir.essence.fragments.powermenu.PowerMenuActions" />
+
+       <Preference
+            android:fragment="com.android.settings.accessibility.FlashNotificationsPreferenceFragment"
+            android:key="flash_notifications_preference_accessibility"
+	    android:persistent="false"
+	    android:summary="Flash the camera light or the screen when you receive notifications or when alarm sound"
+            android:title="@string/flash_notifications_title"
+            settings:keywords="@string/flash_notifications_keywords"
+	    settings:layout="@layout/essence_pref_card_mid"	
+            settings:searchable="true"
+            settings:controller="com.android.settings.accessibility.FlashNotificationsPreferenceController" />	
+	    
+        <!-- Button  -->
+        <Preference
+            settings:layout="@layout/essence_pref_card_bot"
+            android:key="buttons_category"
+	    android:textStyle="bold"	
+            android:summary="Buttons Customisation"
+            android:title="@string/buttons_category">
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetPackage="org.lineageos.lineageparts"
+                android:targetClass="org.lineageos.lineageparts.input.ButtonSettings" />
+        </Preference>  
+    </PreferenceCategory>
+
+    <PreferenceCategory
+	    android:key="buttons_navbar_layout_category"
+	    android:layout="@layout/custom_preference_category2"
+            android:title="@string/navbar_layout_category_title">
+
+        <org.elixir.essence.preferences.SecureSettingListPreference
+            android:key="navbar_layout_views"
+            android:title="@string/navbar_layout_title"
+            android:summary="%s"
+	    settings:layout="@layout/essence_pref_card_top"	
+            android:entries="@array/navbar_layout_entries"
+            android:entryValues="@array/navbar_layout_values"
+            android:defaultValue="default" />
+
+	<org.elixir.essence.preferences.SecureSettingSwitchPreference    
+            android:key="navbar_inverse_layout"
+	    settings:layout="@layout/xd_pref_card_bot"	
+            android:title="@string/navbar_invert_layout_title"
+            android:summary="@string/navbar_invert_layout_summary"
+	    android:defaultValue="false" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:layout="@layout/custom_preference_category"
+        android:title="App Cloning" >
+	
+    <Preference
+        android:key="cloned_apps"
+        android:title="@string/cloned_apps_dashboard_title"
+        android:summary="Create a second instance of an app so that you can you two accounts at the same time"
+        settings:layout="@layout/essence_pref_card_mid2"
+        settings:controller="com.android.settings.applications.ClonedAppsPreferenceController"
+        android:fragment="com.android.settings.applications.manageapplications.ManageApplications">
+        <extra
+            android:name="classname"
+            android:value="com.android.settings.Settings$ClonedAppsListActivity"/>
+        <intent android:action="android.settings.MANAGE_CLONED_APPS_SETTINGS"/>
+    </Preference>
+    </PreferenceCategory>
+	
+    <PreferenceCategory
+        android:layout="@layout/custom_preference_category2"
+	android:title="Gaming Options" >
+
+        <!-- Gaming mode -->
+        <Preference
+		android:key="gaming_mode"
+		settings:layout="@layout/essence_pref_card_top"   
+            android:title="@string/gaming_mode_title"
+            android:summary="@string/gaming_mode_summary">
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetPackage="io.chaldeaprjkt.gamespace"
+                android:targetClass="io.chaldeaprjkt.gamespace.settings.SettingsActivity" />
+        </Preference>  
+
+        <!-- Unlock FPS for specific games -->
+        <SwitchPreference
+            android:key="use_games_spoof"
+            android:title="@string/use_games_spoof_title"
+            settings:layout="@layout/xd_pref_card_mid"
+            android:summary="@string/use_games_spoof_summary" />
+
+        <!--Adaptive Notifications-->
+        <Preference
+            android:fragment="com.android.settings.notification.PoliteNotificationsPreferenceFragment"
+            android:key="polite_notifications_preference"
+            settings:layout="@layout/essence_pref_card_mid"
+            android:persistent="false"
+            android:title="@string/notification_polite_title"
+	        android:summary="Lowers the volume and minimise alerts"	
+            settings:controller="com.android.settings.notification.PoliteNotificationsPreferenceController" />
+	    
+        <org.elixir.essence.preferences.SystemSettingSwitchPreference
+            android:key="less_boring_heads_up"
+            android:title="@string/less_boring_heads_up_title"
+            android:summary="@string/less_boring_heads_up_summary"
+	        settings:layout="@layout/xd_pref_card_mid"			
+            android:defaultValue="false" />
+
+        <!-- Heads up -->
+        <lineageos.preference.GlobalSettingSwitchPreference
+            android:key="heads_up_notifications_enabled"
+	        settings:layout="@layout/xd_pref_card_mid"		
+            android:title="@string/heads_up_notifications_enabled_title"
+            android:summary="@string/heads_up_notifications_enabled_summary" />
+	    
+        <!-- Alert while display on -->
+	    <org.elixir.essence.preferences.SystemSettingSwitchPreference
+            android:key="notification_sound_vib_screen_on"
+	        settings:layout="@layout/xd_pref_card_bot"	
+	        android:title="@string/notifications_alert_display_on_title"
+            android:summary="@string/notifications_alert_display_on_summary"
+            android:defaultValue="true" />
+     </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="miscellaneous_developer_options_category"
+	    android:layout="@layout/custom_preference_category2"
+	    android:title="@string/miscellaneous_developer_options_category">
+    
+	<!-- Allow application downgrade -->
+       <org.elixir.essence.preferences.SystemSettingSwitchPreference
+            android:key="pm_downgrade_allowed"
+            android:title="@string/miscellaneous_app_downgrade_title"
+            android:summary="@string/miscellaneous_app_downgrade_summary"
+	        settings:layout="@layout/xd_pref_card_top"	   
+            android:defaultValue="false" />
+
+        <!-- USB configuration -->
+        <Preference
+            android:key="default_usb_configuration"
+            android:title="@string/usb_default_config_title"
+	        settings:layout="@layout/essence_pref_card_mid"   
+            android:summary="@string/usb_default_config_summary"
+            android:fragment="com.android.settings.connecteddevice.usb.UsbDefaultFragment" />
+	    
+        <org.elixir.essence.preferences.SecureSettingSwitchPreference
+            android:key="window_ignore_secure"
+            settings:layout="@layout/xd_pref_card_bot"
+            android:title="@string/ignore_window_secure_title"
+            android:summary="@string/ignore_window_secure_summary"
+            android:defaultValue="false"/>
+    
+    </PreferenceCategory>
+
+</PreferenceScreen>

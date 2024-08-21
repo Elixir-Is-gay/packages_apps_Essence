@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Copyright (C) 2017-2019 The PixelDust Project
+     Copyright (C) 2022 PixelPlusUI
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:title=" ">
+
+    <!-- Lottie Animation-->
+    <com.android.settingslib.widget.LayoutPreference
+        android:key="essence_animation"
+        android:layout="@layout/essence_lottie"
+        android:selectable="false" />
+
+    <!-- Essence Header -->
+    <PreferenceCategory
+        android:title="@string/essence_settings_title"
+        android:layout="@layout/custom_preference_category_home_title">
+    </PreferenceCategory>
+	
+    <PreferenceCategory
+        android:key="essenceSubtitle" 
+        android:title="@string/essence_settings_subtitle"
+        android:layout="@layout/custom_preference_category_subtitle">
+    </PreferenceCategory>
+
+    <Preference
+        android:key="essence_donate_status"
+        android:title="@string/essence_donate_status_normal_title"
+        android:summary="@string/essence_donate_status_normal_subtitle"
+        android:icon="@drawable/essence_non_pro_user"
+        settings:layout="@layout/non-pro_user_card">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="com.elixer.updater"
+            android:targetClass="com.elixer.updater.AboutActivity" />
+    </Preference>
+
+    <!-- Teams  -->
+    <Preference
+        settings:layout="@layout/essence_mainpage-oldstyle-top"
+        android:fragment="org.elixir.essence.categories.About"
+        android:key="about_category"
+        android:icon="@drawable/ic_system_category"
+        android:textStyle="bold"
+        android:summary="@string/summ_about"
+	    android:title="@string/aboutus_tab" />
+   
+    <!-- Donate  -->
+    <Preference
+        settings:layout="@layout/essence_mainpage-oldstyle-bot"
+        android:fragment="org.elixir.essence.categories.Donate"
+        android:key="donate_category"
+        android:icon="@drawable/ic_donate_icon"
+        android:textStyle="bold"
+        android:summary="@string/donate_summary"
+        android:title="@string/donate" />
+	    
+    <!-- Monet  -->
+    <Preference
+        settings:layout="@layout/essence_mainpage-oldstyle-top"
+        android:fragment="org.elixir.essence.categories.Themes"
+        android:key="customisation"
+        android:icon="@drawable/ic_theme_category"
+        android:textStyle="bold"
+        android:summary="@string/summ_monet"
+        android:title="@string/customisation_title" />
+
+    <!-- Lock Screen  -->
+    <Preference
+        settings:layout="@layout/essence_mainpage-oldstyle-bot"
+        android:fragment="org.elixir.essence.categories.Lockscreen"
+        android:key="lockscreen_category"
+        android:icon="@drawable/ic_lockscreen_category"
+        android:textStyle="bold"
+        android:summary="@string/summ_lock"
+        android:title="@string/lockscreen_title" />
+
+    <!-- Status Bar  -->
+    <Preference
+        settings:layout="@layout/essence_mainpage-oldstyle-top"
+        android:fragment="org.elixir.essence.categories.StatusBar"
+        android:key="statusbar_category"
+        android:icon="@drawable/ic_status_bar_category"
+        android:textStyle="bold"
+        android:summary="@string/summ_sbar"
+        android:title="@string/statusbar_title" />
+
+    <!-- Quick Settings -->
+    <Preference
+        settings:layout="@layout/essence_mainpage-oldstyle-bot"
+        android:fragment="org.elixir.essence.categories.Qs"
+        android:key="quicksettings_category"
+        android:icon="@drawable/ic_qs_category"
+        android:textStyle="bold"
+        android:summary="@string/summ_quick"
+        android:title="@string/quicksettings_title" />
+
+    <!-- Gestures -->
+    <Preference
+        settings:layout="@layout/essence_mainpage-oldstyle-top"
+        android:fragment="org.elixir.essence.fragments.EssenceGestures"
+        android:key="gestures_category"
+        android:icon="@drawable/ic_settings_pdgestures"
+        android:textStyle="bold"
+        android:title="@string/gestures_title"
+        android:summary="@string/summ_gesture" />
+
+    <!-- Misc   -->
+    <Preference
+        settings:layout="@layout/essence_mainpage-oldstyle-bot"
+        android:fragment="org.elixir.essence.categories.Misc"
+        android:key="misc_category"
+        android:icon="@drawable/ic_hardware_category"
+        android:textStyle="bold"
+        android:summary="@string/summ_misc"
+        android:title="@string/misc_title" />
+
+</PreferenceScreen>

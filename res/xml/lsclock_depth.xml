@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  Copyright (C) 2017 The Dirty Unicorns Project
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+  You should have received a copy of the GNU General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ -->
+
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:title=" ">
+
+    <!-- Header -->
+    <PreferenceCategory
+        android:title="LockScreen Clocks"
+	android:summary="Elevate your lockscreen feel"
+        android:layout="@layout/custom_preference_category_essence">
+    </PreferenceCategory>
+
+    <com.android.settingslib.widget.LayoutPreference
+        android:key="surface_view_header"
+        android:selectable="false"
+        android:layout="@layout/essence_lockscreen_preview" />
+
+    <Preference
+        android:key="invisible_space"
+        android:layout="@android:layout/preference_category"
+        android:enabled="false"
+        android:selectable="false" />
+
+      <PreferenceCategory
+        android:layout="@layout/custom_preference_category"
+        android:title="Depth Clocks">
+	
+	    <Preference
+		    android:key="android.customization.lsclock.depth"
+	   	    settings:layout="@layout/essence_pref_card_top"
+	        android:title="@string/ls_depth_clock_elixir_customisation_title"
+	        android:summary="Choose Depth clock style"
+	        android:fragment="org.elixir.essence.fragments.LSDepthClocks" />
+	
+	    <ListPreference
+	        android:key="android.customization.lsclock.depth.styles"
+	        android:title="@string/ls_depth_clock_style_elixir_customisation_title"
+	        settings:layout="@layout/essence_pref_card_bot"
+	        android:summary="@string/ls_depth_clock_style_elixir_customisation_subtitle"
+	        android:defaultValue="0"
+	        android:entries="@array/lsdepthclock_style_entries"
+	        android:entryValues="@array/lsdepthclock_style_values" />
+    </PreferenceCategory>
+	
+      <PreferenceCategory
+        android:layout="@layout/custom_preference_category"
+        android:title="Depth Clocks Styling">
+	
+	    <Preference
+	        android:key="android.customization.lsclock.depth.fonts"
+	        settings:layout="@layout/essence_pref_card_top"
+	        android:title="@string/customization_depth_clock_font_title"
+	        android:summary="@string/customization_depth_clock_font_summary"
+	        android:fragment="org.elixir.essence.fragments.DepthClockFontsPicker"/>
+
+	    <org.elixir.essence.preferences.SecureSettingSeekBarPreference
+	        android:key="lsclock_depth_clock_auto_image_margin"
+	        android:title="@string/ls_depth_clock_image_margin_elixir_customisation_title"
+	        app:layout_pos="2"
+	        android:max="1400"
+	        settings:min="-900"
+	        settings:interval="1"
+	        android:defaultValue="0" />
+
+	    <org.elixir.essence.preferences.SecureSettingSeekBarPreference
+	        android:key="lsclock_depth_clock_auto_margin"
+	        android:title="@string/ls_depth_clock_margin_elixir_customisation_title"
+	        app:layout_pos="3"
+	        android:max="700"
+	        settings:min="-700"
+	        settings:interval="10"
+	        android:defaultValue="550" />
+    </PreferenceCategory>
+
+     <PreferenceCategory
+        android:layout="@layout/custom_preference_category"
+        android:title="Static Clocks">
+	
+	    <Preference
+		    android:key="android.customization.lsclock"
+	   	    settings:layout="@layout/essence_pref_card_mid2"
+	        android:title="@string/ls_clock_elixir_customisation_title"
+	        android:summary="Choose static clock style"
+	        android:fragment="org.elixir.essence.fragments.LSClocks" />
+    </PreferenceCategory>
+
+</PreferenceScreen>
